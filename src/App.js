@@ -1,13 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+import { registerRootComponent } from 'expo';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -17,3 +12,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+function App() {
+  return (
+    <View style={styles.container}>
+      <Text>RoosterRedux!</Text>
+    </View>
+  );
+}
+
+registerRootComponent(App);
