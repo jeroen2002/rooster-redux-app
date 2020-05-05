@@ -1,11 +1,13 @@
-import React from "react";
-import { registerRootComponent } from "expo";
-import CustomBottomNavigation from "./components/CustomBottomNavigation/index";
+import React from 'react';
+
+import { registerRootComponent } from 'expo';
+
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
     <>
-      <CustomBottomNavigation />
+      <NavigationBar />
     </>
   );
 }
