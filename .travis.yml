@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 12
+
+branches:
+  only:
+    - master
+
+install:
+  - npm ci
+
+jobs:
+  include:
+    - stage: Tests
+      name: Linting
+      script: npm run lint
