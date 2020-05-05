@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import HeaderBar from '../components/HeaderBar';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -12,10 +14,15 @@ const styles = StyleSheet.create({
 
 function DayView() {
   return (
-    <View style={styles.container}>
-      <Text>Dagweergave</Text>
-    </View>
+    <>
+      <HeaderBar />
+
+      <View style={styles.container}>
+        <Text>Dagweergave</Text>
+      </View>
+    </>
   );
 }
+
 
 export default DayView;
