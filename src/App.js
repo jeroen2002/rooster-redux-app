@@ -1,25 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { registerRootComponent } from "expo";
+import CustomBottomNavigation from "./components/CustomBottomNavigation";
 
-import { registerRootComponent } from 'expo';
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-
-function App() {
-  return (
-    <View style={styles.container}>
-      <Text>RoosterRedux!</Text>
-    </View>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <>
+        <CustomBottomNavigation />
+      </>
+    );
+  }
 }
 
 registerRootComponent(App);
