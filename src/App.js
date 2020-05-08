@@ -1,14 +1,13 @@
 import React from 'react';
+import { View, Text } from 'react-native';
 
 import { registerRootComponent } from 'expo';
 
-import NavigationBar from './components/NavigationBar';
-
 function App() {
   return (
-    <>
-      <NavigationBar />
-    </>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>RoosterRedux!</Text>
+    </View>
   );
 }
 
