@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+
 import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
+
 import PropTypes from 'prop-types';
 
 

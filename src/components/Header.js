@@ -10,6 +10,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     paddingLeft: 20,
     paddingRight: 20,
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
+    elevation: 3,
   },
   classDateContainer: {
     marginTop: 3,
