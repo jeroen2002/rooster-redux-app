@@ -13,10 +13,11 @@ const styles = StyleSheet.create({
   courseSegments: {
     display: 'flex',
     flexDirection: 'row',
+    alignItems: 'center',
+    height: '100%',
   },
   courseSegment: {
     marginLeft: 15,
-    marginTop: '6.25%',
   },
   courseRoom: {
     display: 'flex',
