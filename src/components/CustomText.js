@@ -15,7 +15,7 @@ function CustomText(props) {
   };
 
   return (
-    <Text style={{ ...textStyle, ...props.style }}>{props.children}</Text>
+    <Text style={[textStyle, props.style]}>{props.children}</Text>
   );
 }
 

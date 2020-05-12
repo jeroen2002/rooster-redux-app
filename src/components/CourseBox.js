@@ -10,6 +10,9 @@ import CustomText from './CustomText';
 
 
 const styles = StyleSheet.create({
+  extraCourseBoxStyles: {
+    marginBottom: 20,
+  },
   courseSegments: {
     display: 'flex',
     flexDirection: 'row',
@@ -31,7 +34,7 @@ const styles = StyleSheet.create({
 
 function CourseBox() {
   return (
-    <View style={globalStyles.box}>
+    <View style={[globalStyles.box, styles.extraCourseBoxStyles]}>
       <View style={styles.courseSegments}>
         <View style={styles.courseSegment}>
           <CustomText color={PRIMARY_COLOR}>13:15</CustomText>
