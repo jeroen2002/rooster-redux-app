@@ -3,16 +3,19 @@ import { StatusBar } from 'react-native';
 
 import { registerRootComponent } from 'expo';
 
-import FontWrapper from './components/wrappers/FontWrapper';
+import FontProvider from './components/providers/FontProvider';
+import StateProvider from './components/providers/StateProvider';
 import DayView from './views/DayView';
 
 
 function App() {
   return (
     <>
-      <FontWrapper>
-        <DayView />
-      </FontWrapper>
+      <FontProvider>
+        <StateProvider>
+          <DayView />
+        </StateProvider>
+      </FontProvider>
       <StatusBar
         backgroundColor="#f4f4f4"
         barStyle="dark-content"

@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
+import { useSelector } from 'react-redux';
+
 import CustomText from './CustomText';
 
 
@@ -25,10 +27,12 @@ const styles = StyleSheet.create({
 });
 
 function Header() {
+  const group = useSelector((state) => state.settings.group);
+
   return (
     <View style={styles.header}>
       <View style={styles.classDateContainer}>
-        <CustomText size={36} weight="bold">AO2A</CustomText>
+        <CustomText size={36} weight="bold">{group}</CustomText>
         <CustomText>3 mei 2020</CustomText>
       </View>
     </View>
