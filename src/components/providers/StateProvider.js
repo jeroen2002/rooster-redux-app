@@ -1,14 +1,15 @@
 import React from 'react';
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import thunk from 'redux-thunk';
 
 import PropTypes from 'prop-types';
 
 import rootReducer from '../../state/reducers';
 
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 function StateProvider(props) {
   return (

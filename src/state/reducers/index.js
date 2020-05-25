@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-import apiReducer from './apiReducer';
+import rosterReducer from './rosterReducer';
 import settingsReducer from './settingsReducer';
 
 
 const rootReducer = combineReducers({
-  api: apiReducer,
+  roster: rosterReducer,
   settings: settingsReducer,
 });
 
