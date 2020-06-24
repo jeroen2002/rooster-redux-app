@@ -13,7 +13,7 @@ const getFonts = () => Font.loadAsync({
 /* eslint-enable global-require */
 
 
-function FontWrapper(props) {
+function FontProvider(props) {
   const [fontLoaded, setFontLoaded] = useState(false);
 
   if (fontLoaded) {
@@ -27,8 +27,8 @@ function FontWrapper(props) {
   );
 }
 
-FontWrapper.propTypes = {
+FontProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default FontWrapper;
+export default FontProvider;
